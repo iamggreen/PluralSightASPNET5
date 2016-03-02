@@ -1,6 +1,6 @@
 ﻿/* site.css */
 
-body {
+/*body {
     font-family: sans-serif;
     font-size: 14px;
     margin: 0;
@@ -18,8 +18,9 @@ input[type=text], input[type=password], textarea {
 input[type=submit] {
     width: auto;
 }
+*/
 
-#main {
+/*#main {
     background-color: #eee;
     padding: 4px;
     margin: 0;
@@ -32,7 +33,7 @@ input[type=submit] {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
+}*/
 
 .headshot {
     max-width: 50px;
