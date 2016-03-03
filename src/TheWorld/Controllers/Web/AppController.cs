@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNet.Mvc;
 using System;
+using System.Linq;
+using TheWorld.Models;
 using TheWorld.Services;
 using TheWorld.ViewModels;
 
@@ -9,15 +11,19 @@ namespace TheWorld.Controllers.Web
     {
 
         private IMailService _mailService;
+        private IWorldRepository _repository;
 
-        public AppController(IMailService mailService)
+        public AppController(IMailService mailService, IWorldRepository repository)
         {
             _mailService = mailService;
+            _repository = repository;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var trips = _repository.GetAllTrips();
+
+            return View(trips);
         }
 
         public IActionResult About()
