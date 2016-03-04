@@ -39,7 +39,7 @@ namespace TheWorld.Models
 
                 var worldTrip = new Trip()
                 {
-                    Name = "US Trip",
+                    Name = "World Trip",
                     Created = DateTime.UtcNow,
                     UserName = "",
                     Stops = new List<Stop>()
